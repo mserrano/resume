@@ -1,79 +1,69 @@
-\documentclass[10pt]{article}
-\usepackage{url,parskip}
+\documentclass{article}
+\usepackage{url,parskip,fullpage,supertabular,titlesec,hyperref}
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage{fullpage}
- 
-\usepackage{supertabular}
-\usepackage{titlesec} 
-\usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks, urlcolor=linkcolour, linkcolor=linkcolour}
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
-\newcommand{\job}[6]{#1 & #2 at \textbf{#3}, #4 \\ & \emph{#5} \\ & \footnotesize{#6}\\ \multicolumn{2}{c}{}\\ }
+\newcommand{\job}[6]{#1 & #2 at \textbf{#3}, #4\\ & \emph{#5}\\& \footnotesize{#6}\\
+    \multicolumn{2}{c}{}\\ }
 \begin{document}
 \pagestyle{empty}
 \par{\centering{\Huge Maxime Serrano}\bigskip\par}
 \hrule
-\par{\centering{605 Templeton Ct, Sunnyvale, CA 94087\hfill(408) 431-3132; \href{mailto:mserrano@cmu.edu}{mserrano@cmu.edu}}\par}
+\par{\centering{605 Templeton Ct, Sunnyvale, CA 94087\hfill(408) 431-3132;
+\href{mailto:mserrano@cmu.edu}{mserrano@cmu.edu}}\par}
 
 \section{Education}
 \begin{tabular}{rl}
 May 2015 {\em expected} & Bachelor of Science in Computer Science and Mathematical Sciences, 
 \\ & \textbf{Carnegie Mellon University}, Pittsburgh, PA\\
-& Cumulative QPA: 3.87 \\
- &\\
-May 2011 & High School Diploma,
-\textbf{Menlo School}, Atherton, CA\\
- &\\
-Relevant Courses: & Compiler Design (15-411, Fall 2012) \\
+& Cumulative QPA: 3.87; In-Major: 3.91 \\ &\\
+May 2011 & High School Diploma, \textbf{Menlo School}, Atherton, CA\\ &\\
+Relevant Courses: & Compiler Design (15-411, Fall 2012; TA Fall 2013) \\
 & Mathematical Studies (21-235/236/237/238, Fall 2012/Spring 2013) \\
 & Introduction to Computer Systems (15-213, Fall 2011) \\
 & Competitive Computer Security (98-212, Instructor Spring 2013 \& Fall 2013)\end{tabular}
 
-\section{Experience}
-\begin{tabular}{r|p{11cm}}
-\job{Summer 2013}
-{Software Engineering Intern}
-{Google Inc}
-{Mountain View, CA}
-{AdSpam}
-{Worked on improvements to the Android malware
-scanner (Bouncer) in order to help detect applications intending to 
-perform fraudulent actions, in particular automatic ad clicks,
-on behalf of the user.}
-\job{Summer 2012}
-{Software Engineering Intern}
-{Google Inc}
-{Mountain View, CA}
+\section{Work Experience}
+\begin{tabular}{r|p{0.8\textwidth}}
+\job{Summer 2013}{Software Engineering Intern}{Google Inc}{Mountain View, CA}
+{AdSpam Clients \& Signals}
+{Worked on improvements to the Android malware scanner (Bouncer) in order to help detect
+applications intending to perform fraudulent actions, in particular automatic ad clicks, on behalf
+of the user.}
+\job{Summer 2012}{Software Engineering Intern}{Google Inc}{Mountain View, CA}
 {Internationalization Libraries}
 {Worked on the open-source project ICU (\url{http://www.icu-project.org/}) to provide better
-word-breaking capabilities in languages like Chinese, Japanese, Korea and Thai in C, C++ and Java.}
-\job{Summer 2011}
-{Programmer}
-{Manifold Studios}{Boston, MA}
-{iPhone Game Development}
-{Worked in a small team on the next version of start-up's
-flagship game, WarSquared. 
-Wrote base game engine code, networking layers, designed user interfaces, and revamped server-side code.}
+word-breaking capabilities in languages similar to Chinese, Japanese, Korea and Thai in C, C++ and
+Java.}
+\job{Summer 2011}{Programmer}{Manifold Studios}{Boston, MA}{iPhone Game Development}
+{Worked in a small team on the next version of start-up's flagship game, WarSquared. Wrote base
+game engine code, networking layers, designed user interfaces,
+and revamped server-side code.}
 \end{tabular}
 
 \section{Relevant Projects and Activities}
-\begin{tabular}{r|p{11cm}}
-PPP & \footnotesize{Co-leader of PPP, a computer security research group 
-and competition team at Carnegie Mellon. Recently, the team earned first
-place prizes at Ghost in the Shellcode and iCTF 2013, as well as a
-second-place finish at Positive Hack Days.} \\
-Wren & \footnotesize{Working on an obfuscating compiler for a variant
-of C.} \\
+% TODO: Put this section of the site up.
+% More detailed descriptions of these projects can be found at
+% \url{http://www.derig.org/~mserrano/projects/}.
+Some of these projects (and some smaller, past ones)
+can be found on my Github account: \url{http://www.github.com/mserrano}.
+
+\begin{tabular}{r|p{0.9\textwidth}}
+PPP & \footnotesize{Co-leader of PPP, a computer security research group and competition team at
+Carnegie Mellon. Recently, the team earned first place prizes at Ghost in the Shellcode and iCTF
+2013, as well as a second-place finish at Positive Hack Days.} \\
+Wren & \footnotesize{Working on an obfuscating compiler for a variant of C.} \\
+Hawk & \footnotesize{Working on an automated suite for binary analysis, focused particularly on
+x86-64.} \\
 \multicolumn{2}{c}{}\\
 \end{tabular}
 
 \section{Computer Skills \& Languages}
 \begin{tabular}{rl}
-Languages: & C, Java, C++, x86/x86-64 assembly, Haskell, PHP, C\#, SQL,
-Python, SML \\
-Software: & IDA Pro, Git, Mercurial, \LaTeX, Unix development toolchain \\
+Languages: & C, Java, C++, x86/x86-64 assembly, Python, Haskell, PHP, C\#, SQL, SML \\
+Software: & IDA Pro, Git, \LaTeX, Mercurial, Perforce, Unix development toolchain \\
 \end{tabular}
 \end{document}
